@@ -11,13 +11,6 @@ h1 {
   font-style:bold;
 }
 
-section {
-  display: inline-block;
-  width: 30%;
-  
-}
-
-
 .people {
   float: right;
   position: absolute;
@@ -42,20 +35,19 @@ img {
 
 section {
   border: 1px solid rgb(236, 228, 240);
-  width: 50%;
+  width: 33.3%;
   border-radius: 2%;
-
+  box-sizing: border-box;
+  float: left;
 }
 .name {
   float: right;
-  position: absolute;
   margin-bottom: 0;
   font-weight: bold;
 }
 
 .username {
   float: right;
-  position: absolute;
   margin: 2em;
   margin-left: 0;
   padding: 0;
