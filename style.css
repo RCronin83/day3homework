@@ -3,24 +3,32 @@ header {
   color: rgb(255, 255, 255);
 
 }
-h1, p {
+p {
   display: inline;
 }
 
 h1 {
+  /*border-sizing: border-box;*/
+  display: inline;
   font-style:bold;
 }
 
 .people {
   float: right;
-  position: absolute;
   top: -1px;
   right: 130px;
+  margin-top: .2em;
+  margin-bottom: 0;
+  min-width: 120px;
 }
+
 .repos {
-  position: absolute;
+  float: right;
   top: -1px;
   right: 30px;
+  margin-top: .2em;
+  margin-bottom: 0;
+  min-width: 100px;
 }
 
 img {
@@ -28,30 +36,36 @@ img {
     height: auto;
     border-radius: 2%;
     padding: 1em;
-    /*float:left;
-    margin: 1em;
-    margin-left: 1em;*/
+    display: inline-block;
+    vertical-align: top;
+    float: left;
 }
 
 section {
   border: 1px solid rgb(236, 228, 240);
   width: 33.3%;
+  min-width: 250px;
   border-radius: 2%;
   box-sizing: border-box;
   float: left;
 }
 .name {
-  float: right;
+  float: left;
+  height: 20%;
+  width: 150px;
   margin-bottom: 0;
   font-weight: bold;
+  box-sizing:border-box;
 }
 
 .username {
-  float: right;
-  margin: 2em;
-  margin-left: 0;
+  float: left;
+  margin-right: auto;
+  margin-top: 0;
+  width: 150px;
   padding: 0;
   font-weight: lighter;
+  box-sizing: border-box;
 }
 
 .language {
@@ -66,6 +80,7 @@ aside {
 }
 
 .info {
+  clear:both;
   padding: 0;
   padding-right: 1em;
 }
